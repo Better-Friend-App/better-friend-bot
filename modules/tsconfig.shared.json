@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "sourceMap": true,
+    "strict": false,
+    "declarationMap": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es6",
+    "lib": ["es7"],
+    "typeRoots": ["./node_modules/@types", "./node_modules", "./src/botpress.d.ts", "./src/typings"],
+    "types": ["reflect-metadata", "jest", "bluebird-global", "node"],
+    "paths": {
+      "botpress/common/typings": ["../../out/bp/common/typings.d.ts"]
+    }
+  },
+  "exclude": ["**/*.test.ts", "./src/views/**"]
+}
